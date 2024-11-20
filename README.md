@@ -5,7 +5,7 @@
 [![dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen.svg?style=flat-square)](package.json)
 [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
-[See joshcomeau.com](https://www.joshwcomeau.com/css/custom-css-reset/)
+[See joshcomeau.com/css/custom-css-reset](https://www.joshwcomeau.com/css/custom-css-reset/)
 
 <details><summary><h2>Contents</h2></summary>
 
