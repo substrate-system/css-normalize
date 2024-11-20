@@ -8,7 +8,16 @@
 [See joshcomeau.com](https://www.joshwcomeau.com/css/custom-css-reset/)
 
 <details><summary><h2>Contents</h2></summary>
+
 <!-- toc -->
+
+- [install](#install)
+- [Use](#use)
+  * [bundler](#bundler)
+  * [pre-bundled](#pre-bundled)
+
+<!-- tocstop -->
+
 </details>
 
 ## install
@@ -19,7 +28,7 @@ npm i -S @substrate-system/css-normalize
 
 ## Use
 
-### Bundler
+### bundler
 If you are a bundling your CSS, e.g. with [vite](https://vite.dev/), just import from this module in your javascript:
 
 ```js
