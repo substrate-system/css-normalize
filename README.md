@@ -1,36 +1,51 @@
-# template ts browser
+# package name here
+[![semantic versioning](https://img.shields.io/badge/semver-2.0.0-blue?logo=semver&style=flat-square)](https://semver.org/)
+[![Common Changelog](https://nichoth.github.io/badge/common-changelog.svg)](./CHANGELOG.md)
+[![install size](https://flat.badgen.net/packagephobia/install/@substrate-system/css-normalize)](https://packagephobia.com/result?p=@nichoth/session-cookie)
+[![dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen.svg?style=flat-square)](package.json)
+[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
-A template for typescript *dependency* modules that run in a browser environment.
-Uses `tape-run` for tests in a browser. See [template-ts](https://github.com/nichoth/template-ts) for the same thing but targeting Node.
+[See joshcomeau.com](https://www.joshwcomeau.com/css/custom-css-reset/)
 
-## use
-1. Use the template button in github. Or clone this then
-`rm -rf .git && git init`. Then `npm i && npm init`.
+<details><summary><h2>Contents</h2></summary>
+<!-- toc -->
+</details>
 
-2. Edit the source code in `src/index.ts`.
+## install
 
-3. Delete either `.github/workflows/gh-pages-docs.yml` or `.github/workflows/gh-pages.yml`, depending on whether you want to deploy an example or docs to github pages.
+```sh
+npm i -S @substrate-system/css-normalize
+```
 
-4. __Edit things__
-    * Use `./README.example.md` as a starter for docs:
-    ```sh
-    cp ./README.example.md ./README.md
-    ```
-    * edit the [build-example](https://github.com/nichoth/template-web-component/blob/c580636f1c912fe2633f7c2478f28b11729c9b80/package.json#L20) command in `package.json` so that it has the right
-    namespace for github pages
+## Use
 
-## featuring
+### Bundler
+If you are a bundling your CSS, e.g. with [vite](https://vite.dev/), just import from this module in your javascript:
 
-* compile the source to both ESM and CJS format, and put compiled files in `dist`.
-* ignore `dist` and `*.js` in git, but don't ignore them in npm. That way we
-  don't commit any compiled code to git, but it is available to consumers.
-* use npm's `prepublishOnly` hook to compile the code before publishing to npm.
-* use [exports](./package.json#L41) field in `package.json` to make sure the right format is used
-  by consumers.
-* `preversion` npm hook -- lint
-* `postversion` npm hook -- `git push --follow-tags && npm publish`
-* eslint -- `npm run lint`
-* tests run in a browser environment via `tape-run` -- see [`npm test`](./package.json#L12).
-  Includes `tap` testing tools -- [tapzero](https://github.com/bicycle-codes/tapzero)
-  and [tap-spec](https://www.npmjs.com/package/tap-spec)
-* CI via github actions
+```js
+import '@susbtrate-system/css-normalize'
+```
+
+Or import the minified CSS:
+```js
+import '@substrate-system/css-normalize/min'
+```
+
+### pre-bundled
+This package includes minified CSS also.
+
+1. Copy the CSS so it is accessible to your web server. The minified file is at `dist/index.min.css`.
+
+```sh
+cp node_modules/@substrate-system/css-normalize/dist/index.min.css ./public/normalize.css
+```
+
+2. Add a link in your HTML.
+
+```html
+<head>
+  <link rel="stylesheet" href="/normalize.css">
+</head>
+
+<!-- ... -->
+```

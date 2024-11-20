@@ -1,15 +1,21 @@
 {
-  "private": true,
-  "type": "module",
+  "name": "@substrate-system/css-normalize",
+  "description": "Normalize/reset CSS",
   "version": "0.0.0",
-  "main": "dist/index.js",
+  "main": "dist/index.css",
   "files": [
     "./dist/*"
   ],
+  "exports": {
+    ".": "./dist/index.css",
+    "./min": "./dist/index.min.css"
+  },
   "scripts": {
+    "lint": "stylelint src/*.css",
     "toc": "markdown-toc --maxdepth 3 -i README.md",
-    "build": "mkdir -p dist && cp src/index.css dist",
-    "preversion": "npm run build",
+    "build": "mkdir -p dist && rm -rf ./dist/* && cp ./src/index.css dist",
+    "build:min": "postcss src/index.css > dist/index.min.css",
+    "preversion": "npm run lint && npm run build && npm run build:min",
     "version": "npm run toc && auto-changelog -p --template keepachangelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md README.md",
     "postversion": "git push --follow-tags && npm publish",
     "prepublishOnly": "npm run build"
@@ -17,11 +23,26 @@
   "dependencies": {},
   "devDependencies": {
     "auto-changelog": "^2.4.0",
-    "markdown-toc": "^1.2.0"
-  },
-  "exports": {
-    ".": "./dist/index.css"
+    "cssnano": "^7.0.6",
+    "markdown-toc": "^1.2.0",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1"
   },
   "author": "nichoth <nichoth@nichoth.com> (https://nichoth.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/substrate-system/css-normalize.git"
+  },
+  "keywords": [
+    "css",
+    "normalize",
+    "reset"
+  ],
+  "bugs": {
+    "url": "https://github.com/substrate-system/css-normalize/issues"
+  },
+  "homepage": "https://github.com/substrate-system/css-normalize",
   "license": "MIT"
 }
