@@ -5,7 +5,7 @@
 [![dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen.svg?style=flat-square)](package.json)
 [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
-A minimal reset of some styles for a nice blank slate.
+Reset/normalize styles for a nice blank slate.
 
 [See joshcomeau.com/css/custom-css-reset](https://www.joshwcomeau.com/css/custom-css-reset/)
 
