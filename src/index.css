@@ -6,15 +6,20 @@ html {
     scroll-behavior: smooth;
 }
 
+/* 1. Box-sizing model */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
-/* 2. Remove default margin */
 * {
+    /* 2. Remove default margin */
     margin: 0;
-    /* 3. Add accessible line-height */
-    line-height: calc(1em + 0.5rem);
+
+    /*
+        3. Add accessible line-height 
+        see https://kittygiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/
+    */
+    line-height: calc(2px + 2ex + 2px);
 }
 
 body {

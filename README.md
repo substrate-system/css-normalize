@@ -13,12 +13,13 @@ Reset/normalize styles for a nice blank slate.
 
 *Featuring*:
 
-1. `box-sizing: border-box;` -- Percentages [resolve based on `barder-box`, not `content-box`](https://www.joshwcomeau.com/css/custom-css-reset/#one-box-sizing-model-2).
+1. `box-sizing: border-box;` -- Sizes [based on `barder-box`, not `content-box`](https://www.joshwcomeau.com/css/custom-css-reset/#one-box-sizing-model-2).
 2. `margin: 0` -- [Remove default margin](https://www.joshwcomeau.com/css/custom-css-reset/#two-remove-default-margin-3). Add margins as needed in application CSS.
-3. [`line-height: 1.5;`](https://www.joshwcomeau.com/css/custom-css-reset/#three-add-accessible-line-height-4) -- [Dyslexia friendly](https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html) line height.
+3. [`line-height: calc(2px + 2ex + 2px);`](https://www.joshwcomeau.com/css/custom-css-reset/#three-add-accessible-line-height-4) -- [Dyslexia friendly](https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html) line height.
 >
 > [!NOTE]  
-> You will want to override the `line-height` for headings in your application CSS.
+> You may want to override the `line-height` for headings in your application CSS.
+> See [this article](https://kittygiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/) for more info about `line-height`.
 >
 4. `-webkit-font-smoothing: antialiased;` -- [Chrome and Safari still use subpixel antialiasing by default](https://www.joshwcomeau.com/css/custom-css-reset/#four-improve-text-rendering-5), which is bad on high DPI screens.
 5. [Use block display by default for media tags](https://www.joshwcomeau.com/css/custom-css-reset/#five-improve-media-defaults-6), like `img` and `video`.
