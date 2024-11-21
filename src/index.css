@@ -9,11 +9,11 @@ see https://www.joshwcomeau.com/css/custom-css-reset/
 /* 2. Remove default margin */
 * {
     margin: 0;
+    /* 3. Add accessible line-height */
+    line-height: calc(1em + 0.5rem);
 }
 
 body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
     /* 4. Improve text rendering */
     -webkit-font-smoothing: antialiased;
 }
@@ -24,13 +24,35 @@ img, picture, video, canvas, svg {
     max-width: 100%;
 }
 
-p {
-    text-wrap: pretty;
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+    font: inherit;
 }
 
+/* 7. Avoid text overflows */
+p {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* 8. Improve line wrapping */
 h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
     overflow-wrap: break-word;
+}
+
+
+/*
+  9. Create a root stacking context
+
+  __OPTIONAL__
+
+  see https://www.joshwcomeau.com/css/custom-css-reset/#nine-root-stacking-context-10
+  see https://www.joshwcomeau.com/css/stacking-contexts/
+*/
+#root {
+    isolation: isolate;
 }
 
 @media (prefers-reduced-motion: no-preference) {
