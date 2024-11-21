@@ -86,3 +86,4 @@ cp node_modules/@substrate-system/css-normalize/dist/index.min.css ./public/norm
 
 * [Using calc to figure out optimal line-height](https://kittygiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/)
 * [A Modern CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
+* [Smooth scroll + accessibility](https://gomakethings.com/how-to-animate-scrolling-to-anchor-links-with-one-line-of-css/#accessibility-concerns)

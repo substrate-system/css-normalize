@@ -2,6 +2,10 @@
 see https://www.joshwcomeau.com/css/custom-css-reset/
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -55,8 +59,9 @@ h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* see https://gomakethings.com/how-to-animate-scrolling-to-anchor-links-with-one-line-of-css/#accessibility-concerns */
+@media (prefers-reduced-motion: reduce) {
     html {
-        scroll-behavior: smooth;
+        scroll-behavior: auto;
     }
 }
