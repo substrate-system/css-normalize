@@ -29,6 +29,10 @@ Reset/normalize styles for a nice blank slate.
 8. [Improve line wrapping](https://www.joshwcomeau.com/css/custom-css-reset/#eight-improve-line-wrapping-9) -- widows and orphans
 9. [Root stacking context](https://www.joshwcomeau.com/css/custom-css-reset/#nine-root-stacking-context-10) -- **OPTIONAL** -- Create a new stacking context without needing to set a `z-index`. See [What The Heck, z-index??](https://www.joshwcomeau.com/css/stacking-contexts/)
 
+**_bonus_**
+
+* [scrolling with reduced motion media query](https://gomakethings.com/how-to-animate-scrolling-to-anchor-links-with-one-line-of-css/#accessibility-concerns)
+
 
 <details><summary><h2>Contents</h2></summary>
 

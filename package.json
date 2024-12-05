@@ -13,8 +13,8 @@
   "scripts": {
     "lint": "stylelint src/*.css",
     "toc": "markdown-toc --maxdepth 3 -i README.md",
-    "build": "mkdir -p dist && rm -rf ./dist/* && cp ./src/index.css dist",
-    "build:min": "postcss src/index.css > dist/index.min.css",
+    "build": "mkdir -p dist && rm -rf ./dist/* && cp ./src/index.css dist && npm run build:min",
+    "build:min": "postcss src/index.css --use cssnano postcss-nesting > dist/index.min.css",
     "preversion": "npm run lint && npm run build && npm run build:min",
     "version": "npm run toc && auto-changelog -p --template keepachangelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md README.md",
     "postversion": "git push --follow-tags && npm publish",
