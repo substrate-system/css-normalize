@@ -1,7 +1,7 @@
 {
   "name": "@substrate-system/css-normalize",
   "description": "Normalize/reset CSS",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "dist/index.css",
   "files": [
     "./dist/*"
