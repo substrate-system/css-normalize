@@ -13,7 +13,7 @@ Reset/normalize styles for a nice blank slate.
 
 *Featuring*:
 
-1. `box-sizing: border-box;` -- Sizes [based on `barder-box`, not `content-box`](https://www.joshwcomeau.com/css/custom-css-reset/#one-box-sizing-model-2).
+1. `box-sizing: border-box;` -- Sizes [based on `border-box`, not `content-box`](https://www.joshwcomeau.com/css/custom-css-reset/#one-box-sizing-model-2).
 2. `margin: 0` -- [Remove default margin](https://www.joshwcomeau.com/css/custom-css-reset/#two-remove-default-margin-3). Add margins as needed in application CSS.
 3. [`line-height: calc(2px + 2ex + 2px);`](https://www.joshwcomeau.com/css/custom-css-reset/#three-add-accessible-line-height-4) -- [Dyslexia friendly](https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html) line height.
 >
