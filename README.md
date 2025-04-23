@@ -3,7 +3,7 @@
 [![Common Changelog](https://nichoth.github.io/badge/common-changelog.svg)](./CHANGELOG.md)
 [![install size](https://flat.badgen.net/packagephobia/install/@substrate-system/css-normalize&cache-control=no-cache)](https://packagephobia.com/result?p=@substrate-system/css-normalize)
 [![dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen.svg?style=flat-square)](package.json)
-[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+[![license](https://img.shields.io/badge/license-Polyform_Small_Business-249fbc?style=flat-square)](LICENSE)
 
 Reset/normalize styles for a nice blank slate.
 
