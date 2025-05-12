@@ -32,6 +32,7 @@ Reset/normalize styles for a nice blank slate.
 **_bonus_**
 
 * [scrolling with reduced motion media query](https://gomakethings.com/how-to-animate-scrolling-to-anchor-links-with-one-line-of-css/#accessibility-concerns)
+* [Andy Bell's favorite 3 lines](https://piccalil.li/blog/my-favourite-3-lines-of-css/)
 
 
 <details><summary><h2>Contents</h2></summary>
@@ -48,7 +49,7 @@ Reset/normalize styles for a nice blank slate.
 
 </details>
 
-## install
+## Install
 
 ```sh
 npm i -S @substrate-system/css-normalize
@@ -56,11 +57,27 @@ npm i -S @substrate-system/css-normalize
 
 ## Use
 
+### [Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
+
+```js
+import '@substrate-system/css-normalize'
+```
+
+### [Stack](https://piccalil.li/blog/my-favourite-3-lines-of-css/)
+
+```js
+import '@substrate-system/css-normalize/stack'
+```
+
+Further reading: [every-layout.dev/layouts/stack](https://every-layout.dev/layouts/stack/).
+
 ### bundler
-If you are a bundling your CSS, e.g. with [vite](https://vite.dev/), just import from this module in your javascript:
+If you are a bundling your CSS, e.g. with [vite](https://vite.dev/), just import
+from this module in your javascript:
 
 ```js
 import '@susbtrate-system/css-normalize'
+import '@substrate-system/css-normalize/stack'
 ```
 
 Or import the minified CSS:
@@ -71,7 +88,8 @@ import '@substrate-system/css-normalize/min'
 ### pre-bundled
 This package includes minified CSS also.
 
-1. Copy the CSS so it is accessible to your web server. The minified file is at `dist/index.min.css`.
+1. Copy the CSS so it is accessible to your web server. The minified file
+   is at `dist/index.min.css`.
 
 ```sh
 cp node_modules/@substrate-system/css-normalize/dist/index.min.css ./public/normalize.css

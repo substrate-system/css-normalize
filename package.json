@@ -8,13 +8,16 @@
   ],
   "exports": {
     ".": "./dist/index.css",
-    "./min": "./dist/index.min.css"
+    "./min": "./dist/index.min.css",
+    "./stack": "./dist/stack.css",
+    "./stack/min": "./dist/stack.min.css",
+    "./*.css": "./dist/*.css"
   },
   "scripts": {
     "lint": "stylelint src/*.css",
     "toc": "markdown-toc --maxdepth 3 -i README.md",
     "build": "mkdir -p dist && rm -rf ./dist/* && cp ./src/*.css dist && npm run build:min",
-    "build:min": "postcss src/*.css --use cssnano postcss-nesting --dir dist",
+    "build:min": "postcss src/*.css --use cssnano postcss-nesting --dir dist --ext .min.css",
     "preversion": "npm run lint && npm run build && npm run build:min",
     "version": "npm run toc && auto-changelog -p --template keepachangelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md README.md",
     "postversion": "git push --follow-tags && npm publish",
