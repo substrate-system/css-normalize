@@ -39,8 +39,10 @@ Reset/normalize styles for a nice blank slate.
 
 <!-- toc -->
 
-- [install](#install)
+- [Install](#install)
 - [Use](#use)
+  * [Reset](#reset)
+  * [Stack](#stack)
   * [bundler](#bundler)
   * [pre-bundled](#pre-bundled)
 - [See also](#see-also)
