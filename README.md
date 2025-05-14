@@ -44,7 +44,6 @@ Reset/normalize styles for a nice blank slate.
 - [Install](#install)
 - [Use](#use)
   * [Reset](#reset)
-  * [Stack](#stack)
   * [bundler](#bundler)
   * [pre-bundled](#pre-bundled)
 - [See also](#see-also)
@@ -66,14 +65,6 @@ npm i -S @substrate-system/css-normalize
 ```js
 import '@substrate-system/css-normalize'
 ```
-
-### [Stack](https://piccalil.li/blog/my-favourite-3-lines-of-css/)
-
-```js
-import '@substrate-system/css-normalize/stack'
-```
-
-Further reading: [every-layout.dev/layouts/stack](https://every-layout.dev/layouts/stack/).
 
 ### bundler
 If you are a bundling your CSS, e.g. with [vite](https://vite.dev/), just import
@@ -107,6 +98,13 @@ cp node_modules/@substrate-system/css-normalize/dist/index.min.css ./public/norm
 </head>
 
 <!-- ... -->
+```
+
+### CSS import
+Import from this module in CSS:
+
+```css
+@import url("../node_modules/@substrate-system/css-normalize/dist/index.min.css");
 ```
 
 ## See also
