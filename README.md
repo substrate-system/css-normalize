@@ -5,16 +5,14 @@
 [![dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen.svg?style=flat-square)](package.json)
 [![license](https://img.shields.io/badge/license-Polyform_Small_Business-249fbc?style=flat-square)](LICENSE)
 
-> [!CAUTION]
-> This is no longer supported. It has been replaced by
-> [substrate-system/css](https://github.com/substrate-system/css)
-
 
 Reset/normalize styles for a nice blank slate.
 
 [See joshcomeau.com/css/custom-css-reset](https://www.joshwcomeau.com/css/custom-css-reset/)
 
-> These days, browsers don't have massive discrepancies when it comes to layout or spacing. By and large, browsers implement the CSS specification faithfully, and things behave as you'd expect.
+> These days, browsers don't have massive discrepancies when it comes to layout
+> or spacing. By and large, browsers implement the CSS specification faithfully,
+> and things behave as you'd expect.
 
 *Featuring*:
 
@@ -37,7 +35,6 @@ Reset/normalize styles for a nice blank slate.
 **_bonus_**
 
 * [scrolling with reduced motion media query](https://gomakethings.com/how-to-animate-scrolling-to-anchor-links-with-one-line-of-css/#accessibility-concerns)
-* [Andy Bell's favorite 3 lines](https://piccalil.li/blog/my-favourite-3-lines-of-css/)
 
 
 <details><summary><h2>Contents</h2></summary>
