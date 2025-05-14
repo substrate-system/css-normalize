@@ -5,6 +5,11 @@
 [![dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen.svg?style=flat-square)](package.json)
 [![license](https://img.shields.io/badge/license-Polyform_Small_Business-249fbc?style=flat-square)](LICENSE)
 
+> [!CAUTION]
+> This is no longer supported. It has been replaced by
+> [substrate-system/css](https://github.com/substrate-system/css)
+
+
 Reset/normalize styles for a nice blank slate.
 
 [See joshcomeau.com/css/custom-css-reset](https://www.joshwcomeau.com/css/custom-css-reset/)
