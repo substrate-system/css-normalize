@@ -9,8 +9,6 @@
   "exports": {
     ".": "./dist/index.css",
     "./min": "./dist/index.min.css",
-    "./stack": "./dist/stack.css",
-    "./stack/min": "./dist/stack.min.css",
     "./*.css": "./dist/*.css"
   },
   "scripts": {
