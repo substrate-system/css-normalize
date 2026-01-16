@@ -28,7 +28,7 @@
     "markdown-toc": "^1.2.0",
     "postcss": "^8.4.49",
     "postcss-cli": "^11.0.0",
-    "stylelint": "^16.10.0",
+    "stylelint": "^17.0.0",
     "stylelint-config-standard": "^40.0.0"
   },
   "author": "nichoth <nichoth@nichoth.com> (https://nichoth.com)",
