@@ -45,7 +45,6 @@ input, button, textarea, select {
 p {
     text-wrap: pretty;
     overflow-wrap: break-word;
-    hyphens: auto;
 }
 
 /* 8. Improve line wrapping */
