@@ -14,14 +14,13 @@
   "scripts": {
     "lint": "stylelint src/*.css",
     "toc": "markdown-toc --maxdepth 3 -i README.md",
-    "build": "mkdir -p dist && rm -rf ./dist/* && lightningcss ./src/index.css > dist/index.css && npm run build:min",
+    "build": "mkdir -p dist && rm -rf ./dist/* && npx lightningcss ./src/index.css > dist/index.css && npm run build:min",
     "build:min": "npx lightningcss --minify src/index.css > ./dist/index.min.css",
     "preversion": "npm run lint && npm run build && npm run build:min",
     "version": "npm run toc && auto-changelog -p --template keepachangelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md README.md",
     "postversion": "git push --follow-tags && npm publish",
     "prepublishOnly": "npm run build"
   },
-  "dependencies": {},
   "devDependencies": {
     "auto-changelog": "^2.4.0",
     "lightningcss-cli": "^1.32.0",
@@ -43,5 +42,8 @@
     "url": "https://github.com/substrate-system/css-normalize/issues"
   },
   "homepage": "https://github.com/substrate-system/css-normalize",
-  "license": "SEE LICENSE IN LICENSE"
+  "license": "SEE LICENSE IN LICENSE",
+  "allowScripts": {
+    "lightningcss-cli@1.33.0": true
+  }
 }
